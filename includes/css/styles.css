@@ -1,0 +1,619 @@
+/*............................................................................
+                  Fonts used in the website
+..............................................................................*/
+
+@font-face {
+  font-family: clonewars;
+  src: url(../fonts/clonewars2.ttf);
+}
+@font-face {
+  font-family: headliner;
+  src: url(../fonts/Headliner.ttf);
+}
+@font-face {
+  font-family: quango;
+  src: url(../fonts/quango.otf);
+}
+@font-face {
+  font-family: trench;
+  src: url(../fonts/trench.otf);
+}
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+body {
+  font-family: quango;
+}
+.container {
+  background: transparent;
+}
+
+/* features section styling */
+#features {
+  background: rgba(0,0,0,.6);
+  padding-top: 15px;
+}
+.panel {
+  background: rgba(0,0,0,.8);
+  border: black;
+  box-shadow: 1px -1px 2px #999;
+}
+.panel > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  max-height: 340px;
+}
+.panel > p {
+  color: #f2f2f2;
+}
+.panel-heading {
+  background: rgba(255,255,255,.4);
+  border-bottom: 0;
+}
+.panel-title {
+  color: #f2f2f2;
+  font-family: quango;
+  font-size: 24px;
+  text-shadow: 0 1px 0 #333;
+}
+
+
+/*.............................................................................
+          Footer Styling
+.............................................................................*/
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+footer h6 {
+  font-family: quango;
+  font-size: 16px;
+}
+.social-media-links ul {
+  display: inline-block;
+}
+.social-media-links li {
+  display: inline;
+  opacity: .3;
+}
+.social-media-links li:hover {
+  opacity: 1.0;
+}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  height: 2000px;
+}
+
+.well .page-header {
+  margin-top: 0;
+}
+
+.well h1 {
+  margin-top: 0;
+}
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+.navbar-brand {
+  padding: 13px 15px;
+}
+.transparent .navbar-brand{
+  background: rgba(242,242,242,.4);
+  transition: background 1s linear;
+}
+.transparent .navbar-brand:hover {
+  background: white;
+}
+.navbar-brand img {
+  height: 100%;
+  max-height: 24px;
+  width: 100%;
+}
+
+
+/*.............................................................................
+                Styling for Transparent Navbar
+..............................................................................*/
+
+.navbar-absolute-bottom {
+  bottom: 0;
+  margin-bottom: 15px;
+  position: absolute;
+  width: 100%;
+}
+.navbar-toggle  {
+  background-color: #888;
+}
+.navbar {
+  transition: background-color 1s linear; /* to give fading effect */
+  z-index: 99;
+}
+.navbar .active a {
+  transition: background-color 2s linear; /* to give fading effect */
+}
+.transparent {
+  background-color: transparent;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-radius: 0;
+}
+
+/*next 4 settings are for changing the color of Placeholder in a TextBox*/
+.transparent .form-control::-webkit-input-placeholder {
+  color: #ddd;;
+}
+.transparent .form-control::-moz-placeholder {
+  color: #ddd;;
+  opacity: 1;
+}
+.transparent .form-control:-moz-placeholder {
+  color: #ddd;;
+  opacity: 1;
+}
+.transparent .form-control:-ms-input-placeholder {
+  color: #ddd;;
+}
+
+.transparent .form-control{
+  background-color: #999;;
+  color: black;
+}
+.transparent .navbar-nav > li > a{
+  background-color: transparent;
+  color: white;
+  transition: background-color 1s linear;
+}
+.transparent .navbar-nav > .active {
+  background-color: inherit;
+  box-shadow: inset 0 2px 8px white, inset 0 -2px 4px white;
+  outline: 0;
+}
+.transparent .navbar-nav li > a:hover,
+.transparent .navbar-nav li > a:focus {
+  background-color: white;
+  color: black;
+  outline: 0;
+}
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+  margin-top: 60px;
+}
+#myCarousel .item {
+  height: 400px;
+}
+#myCarousel>a {
+  outline: none;
+}
+#myCarousel>a:active {
+  background-color: #666;
+  transition: background-color 1.5s linear;
+}
+#myCarousel>a:hover {
+  color: #428bca;
+}
+#slide1 {
+  background: url(../../images/carousel_medium_01.jpg) top center no-repeat;
+}
+#slide2 {
+  background: url(../../images/carousel_medium_02.jpg) top center no-repeat;
+}
+#slide3 {
+  background: url(../../images/carousel_medium_03.jpg) top center no-repeat;
+}
+.carousel {
+  font-size: 24px;
+}
+.carousel h4 {
+  font-size: 36px;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.alert {
+  display: none;
+  margin-top: 20px;
+}
+
+.well {
+  margin: 20px 0;
+}
+
+.panel {
+  text-align: center;
+}
+
+.tab-pane .thumbnail {
+  margin: 0 20px 20px 0;
+}
+
+
+/*............................................................................
+                          For tooltip
+.............................................................................*/
+
+[rel="tooltip"] {
+  color: #428bca;
+}
+
+[rel="tooltip"]:hover {
+  cursor: pointer;
+}
+
+/*.............................................................................
+                    hero Element's Header
+..............................................................................*/
+.hero-header {
+  color: white;
+  text-align: center;
+}
+.hero-header h1 {
+  clear: both;
+}
+.hero-header img {
+  height: 100%;
+  width: 100%;
+  max-width: 230px;
+  max-height: 230px;
+}
+#hero-element {
+  background: url(../../img/grass2.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 15px;
+  min-height: 500px;
+  padding-bottom: 100px ;
+  padding-top: 60px;
+  position: relative;
+}
+#hero-element2 {
+  background: url(../../img/stadium.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 800px;
+  position: relative;
+  margin-bottom: 15px;
+}
+main {
+  font-family: quango;
+  font-weight: lighter;
+}
+/*.......... Section styling ........................*/
+#hero-element2 section{
+  color: white;
+  text-align: center;
+}
+#hero-element2 section h1{
+  font-family: quango;
+}
+#hero-element2 section img {
+  margin-bottom: 20px;
+  opacity: .6;
+}
+/*.............................................................................
+                    Modal Window
+..............................................................................*/
+.modal-body .feature {
+  padding-left: 0;
+  padding-right: 0;
+}
+.modal-body .nav-tabs {
+  /*display: inline-block;
+  margin-left: 20px;*/
+  width: auto;
+}
+.modal-body .tab-content {
+  clear: both;
+}
+.modal-footer {
+  clear: both;
+}
+.tabbable {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.nav-tabs>li>a,
+.nav-tabs>li>a:hover,
+.nav-tabs>li>a:focus {
+    outline: none;
+}
+.tab-pane .horizontal-form {
+  margin-top: 10px;
+}
+.horizontal-form .form-group .form-control{
+  margin-bottom: 20px;
+}
+.tab-pane .thumbnail {
+  margin-top: 10px;
+}
+#addPhoto {
+  margin-left: -50px;
+}
+#addPhoto:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+#tab3 .form-group{
+  margin-right: 5px;
+}
+
+/*.............................................................................
+                      Portfolio Styling
+..............................................................................*/
+#portfolio h1 {
+  font-family: clonewars;
+}
+
+.pagination {
+  float: left;
+}
+.filter-tabs button {
+  float: right;
+  margin: 20px 0;
+}
+
+/* Tiles styling*/
+.tile {
+  margin-bottom: 30px;
+}
+.tile img {
+  width: 100%;
+  height: 200px;
+  box-shadow: 2px -1px 3px #444;
+}
+.tile a {
+  text-decoration: none;
+}
+.tile h3 {
+  color: #666;
+  font-family: clonewars;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.tile h3:hover {
+  color: #1abc9c;
+  text-shadow: 0 0 1px #00ff99;
+}
+.tile ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.tile li {
+  color: #888;
+  display: inline-block;
+  margin-left: 0;
+  text-shadow: 1px 0 1px #888;
+}
+.tile li::after {
+  content: '/';
+  padding: 0 10px;
+}
+.tile li:last-child::after {
+  content: '';
+}
+.tile p {
+  margin: 15px 0;
+}
+
+/* "Square" box
+..............................................................................*/
+
+.square-box {
+  background: #888;
+  border-radius: 3px;
+  color: white;
+  font-size: 37px;
+  font-weight: bold;
+  height: 40px;
+  margin: 0 10px;
+  margin-top: -5px;
+  text-align: center;
+  width: 40px;
+}
+
+/* changes the background color when user hovers te mouse over it*/
+.square-box:hover {
+  background: #1abc9c;
+  cursor: pointer;
+}
+#gototop {
+  bottom: 10px;
+  font-family: monospace;
+  margin: 0;
+  position: fixed;
+  right: 10px;
+  text-decoration: none;
+  transition: opacity 1s linear;
+  visibility: hidden;
+}
+#gototop:focus {
+  outline: 0;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  .hero-header h1 {
+    display: none;
+  }
+  .hero-header p {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+
+  .navbar-brand img{
+    max-height: 23px;
+  }
+  .hero-header h1 {
+    display: none;
+  }
+  .hero-header p {
+    display: none;
+  }
+  .nav-tabs li{
+    display: block;
+    margin-bottom: 2px;
+    width: 100%;
+  }
+  .nav-tabs li>a{
+    background: #f2f2f2;
+  }
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:active,
+  .nav-tabs>li.active>a:focus {
+    background: #5bc0de;
+    outline: none;
+  }
+  .tabbable {
+    padding-left: 0;
+  }
+  .tabbable .tab-content {
+    margin-top: 10px;
+  }
+  .horizontal-form {
+    padding-left: 0;
+    clear: both;
+  }
+  #tab3 .form-horizontal {
+    border-bottom: 1px solid #ddd;
+  }
+  #portfolio h1 {
+    text-align: center;
+  }
+  .tile {
+    text-align: center;
+  }
+  .tile img {
+    width: auto;
+    height: auto;
+    box-shadow: 2px -1px 3px #444;
+  }
+
+  #myCarousel .item {
+    height: 310px;
+  }
+
+  #slide1 {
+    background: url(../../images/carousel_small_01.jpg) top center no-repeat;
+  }
+
+  #slide2 {
+    background: url(../../images/carousel_small_02.jpg) top center no-repeat;
+  }
+
+  #slide3 {
+    background: url(../../images/carousel_small_03.jpg) top center no-repeat;
+  }
+
+  .carousel {
+    font-size: 16px;
+  }
+
+  .carousel h4 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+    .modal-dialog {
+        right: auto;
+        left: 50%;
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 30px
+    }
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .hero-header h1 {
+      clear: both;
+      font-family: headliner;
+      font-size: 60px;
+      font-weight: bolder;
+      letter-spacing: 3px;
+    }
+    .hero-header p {
+      font-family: clonewars;
+      font-size: 32px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px) {
+    .hero-header h1 {
+      clear: both;
+      font-family: headliner;
+      font-size: 72px;
+      font-weight: bolder;
+      letter-spacing: 3px;
+    }
+    .hero-header p {
+      font-family: clonewars;
+      font-size: 40px;
+    }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+
+  .hero-header h1 {
+    clear: both;
+    font-size: 88px;
+    font-family: headliner;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-shadow: 0 0 8px white;
+  }
+  .hero-header p {
+    font-family: clonewars;
+    font-size: 40px;
+  }
+
+  #myCarousel .item {
+    height: 500px;
+  }
+
+  #slide1 {
+    background: url(../../images/carousel_large_01.jpg) top center no-repeat;
+  }
+
+  #slide2 {
+    background: url(../../images/carousel_large_02.jpg) top center no-repeat;
+  }
+
+  #slide3 {
+    background: url(../../images/carousel_large_03.jpg) top center no-repeat;
+  }
+}
