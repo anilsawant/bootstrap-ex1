@@ -40,7 +40,7 @@ function show() {
     if( y1 > switchHeight ||  y2 > switchHeight ) {
       navbar.className = 'navbar navbar-default navbar-fixed-top';
     } else {
-      navbar.className = 'navbar navbar-absolute-bottom transparent';
+      navbar.className = 'navbar navbar-default navbar-absolute-bottom transparent';
     }
   }
   if( y1 > 900 || y2 > 900 ) {

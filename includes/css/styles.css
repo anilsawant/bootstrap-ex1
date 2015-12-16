@@ -108,10 +108,9 @@ ul.unstyled {
 /* --------------------------------------
    Navbar
    -------------------------------------- */
-.navbar-brand {
-  padding: 13px 15px;
-  margin-right: 5px;
-}
+.transparent .container-fluid .navbar-collapse {
+   margin-right: -15px;
+ }
 .transparent .navbar-brand{
   background: rgba(242,242,242,.4);
   transition: background 1s linear;
@@ -132,17 +131,16 @@ ul.unstyled {
 
 .navbar-absolute-bottom {
   bottom: 0;
-  margin-bottom: 15px;
-  margin-left: -15px;
+  left: 0;
   position: absolute;
-  width: 100%;
+  right: 0;
+  z-index: 1030;
 }
 .navbar-toggle  {
   background-color: #888;
 }
 .navbar {
   transition: background-color 1s linear; /* to give fading effect */
-  z-index: 99;
 }
 .navbar .active a {
   transition: background-color 2s linear; /* to give fading effect */
@@ -180,7 +178,7 @@ ul.unstyled {
   transition: background-color 1s linear;
 }
 .transparent .navbar-nav > .active {
-  background-color: inherit;
+  background-color: transparent;
   box-shadow: inset 0 2px 8px white, inset 0 -2px 4px white;
   outline: 0;
 }
@@ -460,6 +458,7 @@ main {
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
+
   .hero-header h1 {
     display: none;
   }
@@ -468,21 +467,28 @@ main {
   }
   #hero-element {
     background: url(../../img/grass_small.jpg) center no-repeat;
-    background-size: cover;
     background-attachment: fixed;
     margin-bottom: 15px;
-    padding-bottom: 100px ;
     padding-top: 60px;
-    position: relative;
   }
   #hero-element2 {
     background: url(../../img/stadium_small.jpg) center no-repeat;
-    background-size: cover;
     background-attachment: fixed;
-    position: relative;
     margin-bottom: 15px;
   }
-
+  #hero-element2 section img {
+    width: 100%;
+    height: 100%;
+    src: url(../../img/cheer_small.jpg);
+  }
+  .tile {
+    text-align: center;
+  }
+  .tile img {
+    width: 100%;
+    height: 200px;
+    box-shadow: 2px -1px 3px #444;
+  }
 }
 @media (max-width: 510px) {
 
@@ -491,10 +497,12 @@ main {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 
-
+  /*.navbar-brand {
+    margin-top: 3px;
+  }
   .navbar-brand img{
     max-height: 23px;
-  }
+  }*/
   .hero-header h1 {
     display: none;
   }
@@ -567,7 +575,7 @@ main {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .modal-dialog {
       margin-left: 15px;
       margin-right: 15px;
