@@ -110,6 +110,7 @@ ul.unstyled {
    -------------------------------------- */
 .navbar-brand {
   padding: 13px 15px;
+  margin-right: 5px;
 }
 .transparent .navbar-brand{
   background: rgba(242,242,242,.4);
@@ -132,6 +133,7 @@ ul.unstyled {
 .navbar-absolute-bottom {
   bottom: 0;
   margin-bottom: 15px;
+  margin-left: -15px;
   position: absolute;
   width: 100%;
 }

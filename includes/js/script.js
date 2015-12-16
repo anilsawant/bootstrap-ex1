@@ -38,7 +38,7 @@ function show() {
     // box = navbar.getBoundingClientRect();
 
     if( y1 > switchHeight ||  y2 > switchHeight ) {
-      navbar.className = 'navbar navbar-fixed-top';
+      navbar.className = 'navbar navbar-default navbar-fixed-top';
     } else {
       navbar.className = 'navbar navbar-absolute-bottom transparent';
     }
