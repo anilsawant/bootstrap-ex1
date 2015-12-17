@@ -174,21 +174,40 @@ ul.unstyled {
 }
 .transparent .navbar-nav > li > a{
   background-color: transparent;
-  color: white;
+  color: white ;
   transition: background-color 1s linear;
 }
-.transparent .navbar-nav > .active {
+
+.transparent .navbar-nav > .active > a {
   background-color: transparent;
+  color: white;
   box-shadow: inset 0 2px 8px white, inset 0 -2px 4px white;
   outline: 0;
 }
 .transparent .navbar-nav li > a:hover,
 .transparent .navbar-nav li > a:focus {
-  background-color: white;
-  color: black;
+  background-color: white ;
+  color: black ;
   outline: 0;
 }
-
+.transparent .navbar-nav > .active > a:hover,
+.transparent .navbar-nav > .active > a:focus {
+  background-color: white ;
+  color: black ;
+  outline: 0;
+}
+.transparent .navbar-nav .open .dropdown-menu > li > a {
+  color: white;
+  transition: background-color 1s linear;
+}
+.transparent .navbar-collapse .navbar-nav > .open > a {
+  background-color: white ;
+  color: black;
+}
+.transparent .navbar-nav > .open .dropdown-menu > li > a:hover {
+  background-color: white ;
+  color: black;
+}
 
 /* --------------------------------------
    Carousel
@@ -466,14 +485,12 @@ main {
     display: none;
   }
   #hero-element {
-    background: url(../../img/grass_small.jpg) center no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(to bottom right, #666, #bbb);
     margin-bottom: 15px;
     padding-top: 60px;
   }
   #hero-element2 {
-    background: url(../../img/stadium_small.jpg) center no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(to bottom right, #666, #bbb);
     margin-bottom: 15px;
   }
   #hero-element2 section img {
@@ -497,10 +514,11 @@ main {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 
-  /*.navbar-brand {
+  .navbar-brand {
     margin-top: 3px;
+    margin-left: 3px;
   }
-  .navbar-brand img{
+  /*.navbar-brand img{
     max-height: 23px;
   }*/
   .hero-header h1 {
